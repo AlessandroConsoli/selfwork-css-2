@@ -3,10 +3,13 @@ nav{
 }
 
 header{
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 217, 0, 0.805);
   background-image: url(https://aulab.it/wp-content/uploads/elementor/thumbs/foto-piattaforma-q97pr8g4fopgb5eneh9wa9bbafx6khzx9ukwh5ww88.png);
-  height: 50vh;
+  height: 80vh;
   background-size: contain;
   background-position: left;
   background-repeat: no-repeat;
@@ -23,6 +26,14 @@ h3{
 
 body{
     background-color: #F6F6F6;
+}
+
+aside{
+  background-color: rgba(255, 217, 0, 0.805);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
 }
 
 footer{
@@ -45,8 +56,8 @@ footer{
 
 .link{
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .customDiv{
@@ -63,21 +74,28 @@ footer{
   font-style: normal;
 }
 
-.customText{
+.titleArticle{
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   /* font-weight: <500>; */
   font-style: Italic;
 }
 
-.customContainer{
+.containerArticle{
   display: flex;
   justify-content: space-evenly;
+  width: 60%;
 }
 
-/* .customWrap{
-  text-wrap: wrap;
-} */
+.imgArticle{
+  width: 300px;
+}
+
+
+.link:hover{
+  border-bottom: chocolate;
+}
 
 a:hover {
   color: black;
